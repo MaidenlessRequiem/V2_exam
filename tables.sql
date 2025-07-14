@@ -1,3 +1,6 @@
+create database V1_EXAM;
+
+USE V1_EXAM;
 
 CREATE TABLE V1_EXAM_membre (
     id_membre INT PRIMARY KEY AUTO_INCREMENT,
