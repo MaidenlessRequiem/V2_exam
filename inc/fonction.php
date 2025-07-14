@@ -109,7 +109,7 @@ function getCategories() {
     return $categories;
 }
 
-function getObjetsParCategorieTableau($id_membre) {
+function getObjetsParCategorie($id_membre) {
     $categories = getCategories(); 
     $objets = getObjetsByMembre($id_membre);
 

@@ -17,7 +17,7 @@ if (!file_exists($imgPath) || empty($membre['image_profil'])) {
 }
 
 
-$objets=getObjetsParCategorieTableau($membre['id_membre']);
+$objets=getObjetsParCategorie($membre['id_membre']);
 include("../inc/header.php");
 ?>
 
