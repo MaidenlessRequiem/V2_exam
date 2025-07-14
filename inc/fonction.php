@@ -81,4 +81,52 @@ function listMembres() {
     }
     return $membres;
 }
+function getObjetsByMembre($id_membre) {
+    $conn = dbconnect();
+    $id = (int)$id_membre;
+
+    $sql = "SELECT * FROM V1_EXAM_objet WHERE id_membre = $id ORDER BY nom_objet";
+    $result = mysqli_query($conn, $sql);
+
+    $objets = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $objets[] = $row;
+    }
+    return $objets;
+}
+
+
+function getCategories() {
+    $conn = dbconnect();
+
+    $sql = "SELECT * FROM V1_EXAM_categorie_objet";
+    $result = mysqli_query($conn, $sql);
+
+    $categories = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $categories[$row['id_categorie']] = $row['nom_categorie'];
+    }
+    return $categories;
+}
+
+function getObjetsParCategorieTableau($id_membre) {
+    $categories = getCategories(); 
+    $objets = getObjetsByMembre($id_membre);
+
+    $resultat = [];
+    foreach ($categories as $id_categorie => $nom_categorie) {
+        $resultat[$nom_categorie] = [];
+    }
+
+     foreach ($objets as $objet) {
+        $catId = $objet['id_categorie'];
+        if (isset($categories[$catId])) {
+            $resultat[$categories[$catId]][] = $objet['nom_objet'];
+        }
+    }
+
+    return $resultat;
+}
+
+
 ?>

@@ -23,7 +23,7 @@
         </li>
       </ul>
       <span class="navbar-text">
-All informations about employees
+Emprunt simples
       </span>
     </div>
   </div>
