@@ -26,7 +26,8 @@ V2 :
     -pages
         -upload objets avec images (user , objets , nen'i objet multiple )
         -fiche objet
-        -recherche selective 
+        -recherche selective
+        -liste des membres 
         -fiche membre 
 
     -design a ameliorer 

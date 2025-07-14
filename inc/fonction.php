@@ -63,4 +63,22 @@ function getObjetsByCategorie($id_categorie) {
     return $data;
 }
 
+function getMembre($id) {
+    $conn = dbconnect();
+    $id = (int)$id;
+    $sql = "SELECT * FROM V1_EXAM_membre WHERE id_membre = $id";
+    $result = mysqli_query($conn, $sql);
+    return mysqli_fetch_assoc($result);
+}
+
+function listMembres() {
+    $conn = dbconnect();
+    $sql = "SELECT * FROM V1_EXAM_membre ORDER BY nom";
+    $result = mysqli_query($conn, $sql);
+    $membres = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $membres[] = $row;
+    }
+    return $membres;
+}
 ?>
