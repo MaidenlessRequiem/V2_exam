@@ -24,7 +24,10 @@ V1:
 
 V2 :
     -pages
-        -upload images (user , objets , nen'i objet multiple )
-        
+        -upload objets avec images (user , objets , nen'i objet multiple )
+        -fiche objet
+        -recherche selective 
+        -fiche membre 
+
     -design a ameliorer 
-    -
+    
