@@ -1,0 +1,28 @@
+V1:
+    sql
+        -user 
+        -objet ok pas d'img
+        -categorie ok 
+        -emprunt ok
+        -data ok
+
+    includes
+        -connection ok
+        -header ok 
+        -footer ok
+        -fonction ok 
+
+    pages
+        -index ok 
+        -login ok 
+        -inscription ok 
+        -categorie ok 
+        -liste ok 
+        
+
+    -deploiement ok
+
+V2 :
+    -pages
+        -upload images (user , objets , nen'i objet multiple )
+        
