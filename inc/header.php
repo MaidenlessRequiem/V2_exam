@@ -16,7 +16,10 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="liste.php">Liste</a>
+          <a class="nav-link" href="liste.php">Inventaire</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="liste_membre.php">Membres</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="logout.php">log out</a>

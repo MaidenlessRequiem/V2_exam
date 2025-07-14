@@ -16,6 +16,7 @@ include("../inc/header.php") ;
     <ul class="list-group">
         <li class="list-group-item"><a href="liste.php">Liste des objets</a></li>
         <li class="list-group-item"><a href="categorie.php">Filtrer par catégorie</a></li>
+                <li class="list-group-item"><a href="liste_membre.php">Liste des Membres</a></li>
     </ul>
 </div>
 </body>
